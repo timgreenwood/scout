@@ -1,0 +1,33 @@
+{
+    "name": "timgreenwood/scout",
+    "description": "Tim Greenwood Scout - Interact with Cloudabove Scout from within Laravel.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Greenwood",
+            "email": "tim@tgmedia.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Timgreenwood\\Scout\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Timgreenwood\\Scout\\Providers\\ScoutServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/console": "^8.73",
+        "illuminate/support": "^8.73"
+    }
+}
